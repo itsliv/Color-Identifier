@@ -5,8 +5,3 @@ Well this is the app for you!*
 This app allows those with color-blindness or seeing disabilities to understand how colorful the world is around them.
 Color Identifier brings a dull world to life! You can use a picture from your photo library or take one then and there and drag over
 an object to identify the specific color. Life has never been brighter!
-
-### *Raving Reviews*
-> Best app of the color-blind community from May 2019 (Liv Reinis, app developer)
- 
-> Makes colors seem real to everyone. 4.5 Stars. (Theory Millar, Topanga City Council)
