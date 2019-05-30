@@ -7,56 +7,13 @@
 //
 
 import UIKit
-import AVFoundation
 
-class ViewController: UIViewController {
+internal class ViewController : UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    let captureSession = AVCaptureSession()
-    var previewLayer:CALayer!
+    @IBOutlet weak var imageView: UIImageView!
     
-    var captureDevice:AVCaptureDevice?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        prepareCamera()
+    @IBAction func launchPhotoPicker(_ sender: Any) {
     }
     
-    func prepareCamera() {
-        captureSession.sessionPreset = AVCaptureSession.Preset.photo
-        
-        if let availableDevices = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .back).devices {
-            captureDevice = availableDevices.first
-            beginSession()
-        }
-
-    
-}
-    
-    func beginSession() {
-        do {
-            let captureDeviceInput = try AVCaptureDeviceInput(device: captureDevice ?? <#default value#>)
-            
-            captureSession.addInput(captureDeviceInput)
-        } catch{
-            print(error.localizedDescription)
-        }
-        
-        if let previewLayer = AVCaptureVideoPreviewLayer(session: captureSession) {
-            self.previewLayer = previewLayer
-            self.view.layer.addSublayer(self.previewLayer)
-            self.previewLayer.frame = self.view.layer.frame
-            captureSession.startRunning()
-            
-            let dataOutput = AVCaptureVideoDataOutput()
-            dataOutput.videoSettings = [(kCVPixelBufferPixelFormatTypeKey as NSString):NSNumber(value:kCVPixelFormatType_32BGRA)] as [String : Any]
-            
-            dataOutput.alwaysDiscardsLateVideoFrames = true
-            
-            if captureSession
-        }
-    }
-    
-    
-
+    internal func UIImagePickerController (_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
 }
