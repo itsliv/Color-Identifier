@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		2ACB01352289FB1C00F6300B /* Color Identifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Color Identifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ACB01382289FB1C00F6300B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2ACB013A2289FB1C00F6300B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2ACB013A2289FB1C00F6300B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		2ACB013D2289FB1C00F6300B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2ACB013F2289FB2000F6300B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ACB01422289FB2000F6300B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +74,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A9CC2A022A8BE1D00DDA9CC /* Color Picker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Color Picker";
+			sourceTree = "<group>";
+		};
 		2ACB012C2289FB1C00F6300B = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				2ACB01382289FB1C00F6300B /* AppDelegate.swift */,
+				2A9CC2A022A8BE1D00DDA9CC /* Color Picker */,
 				2ACB013A2289FB1C00F6300B /* ViewController.swift */,
 				2ACB013C2289FB1C00F6300B /* Main.storyboard */,
 				2ACB013F2289FB2000F6300B /* Assets.xcassets */,
